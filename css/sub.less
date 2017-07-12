@@ -238,8 +238,7 @@ body {
           border-top: 1px solid @gray-lighter;
 
           &.text {
-            .rem(height, 90);
-            .rem(line-height, 90);
+
           }
           @media all and (min-width: 1200px) {
             font-size: 20px;
@@ -258,7 +257,8 @@ body {
           .inline-block;
           .rem(min-height, 37);
           .remCalc(width, 110);
-          .rem(padding, 4);
+          .rem(padding, 4 10);
+          .rem(line-height, 37);
           border-top: 1px solid @gray-lighter;
           @media all and (min-width: 1200px) {
             font-size: 20px;
@@ -323,16 +323,11 @@ body {
           }
 
           &.text {
-            .rem(height, 90);
+            line-height:1.4;
+            height:auto;
+            .rem(padding, 12 10);
 
-            textarea {
-              .inline-block;
-              width: 100%;
-              .rem(height, 90);
-              border: none;
-              outline: none;
-              .rem(padding, 10);
-            }
+
           }
         }
       }
