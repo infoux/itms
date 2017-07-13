@@ -54,7 +54,7 @@ body {
           right: 0;
           top: 0;
           .rem(padding, 0 10);
-          width: calc(~"100% / 5");
+          .rem(width, 100);
           .rem(font-size, 20);
           .rem(height, 45);
           .rem(line-height, 45);
@@ -376,12 +376,10 @@ body {
           .rem(padding, 12 0 0);
           border-bottom: 1px solid @gray-lighter;
           .relative;
-          .rem(height, 42);
-          .rem(line-height, 42);
           @media all and (min-width: 1200px) {
             padding: 0;
             .right;
-            height: 42px;
+            height: 52px;
             line-height: 52px;
           }
 
@@ -390,10 +388,13 @@ body {
             .rem(font-size, 20);
             .rem(padding, 0 10);
             .normal;
+            .rem(height, 42);
+            .rem(line-height, 42);
             @media all and (min-width: 1200px) {
               .inline-block;
               .absolute;
               left: 0;
+              height: 52px;
               line-height: 52px;
             }
           }
@@ -474,10 +475,21 @@ body {
             }
 
             p {
+              .rem(width, 100);
               margin: 0;
               border-top: none;
               .center;
               border-left: 1px solid @gray-lighter;
+            }
+          }
+        }
+
+        &.basic {
+          li {
+            .left;
+
+            h4 {
+              .relative;
             }
           }
         }
@@ -490,7 +502,7 @@ body {
         border-spacing: 0;
         border-collapse: separate;
         border-bottom: 1px solid @gray-lighter;
-        .rem(margin-top, 30);
+        .rem(margin, 30 0);
 
         tr {
           &.step01 {
@@ -636,12 +648,12 @@ body {
               .rem(padding, 14 4 14 170) !important;
 
               &:first-of-type {
-                .rem(margin-top, 30);
                 .bold;
               }
 
               &:last-of-type {
                 border-bottom-width: 1px;
+                .rem(margin-bottom, 30);
               }
             }
           }
@@ -651,16 +663,16 @@ body {
       fieldset.search {
         border: none;
         .center;
-        margin: 0;
         .rem(padding, 0 10);
+        .rem(margin, 0 0 30);
         .zero;
 
         input {
           .top;
-          .rem(font-size, 22);
-          width: calc(~"70% - 60px");
+          .rem(font-size, 18);
+          width: calc(~"70% - 80px");
           border: 1px solid @gray-lighter;
-          .rem(height, 52);
+          .rem(height, 42);
           .rem(padding, 0 10);
           @media all and (min-width: 1200px) {
             width: 280px;
@@ -670,10 +682,10 @@ body {
 
         select {
           .top;
-          .rem(font-size, 22);
+          .rem(font-size, 18);
           width: 30%;
           border: 1px solid @gray-lighter;
-          .rem(height, 52);
+          .rem(height, 42);
           .rem(padding, 0 10);
           border-right: none;
           @media all and (min-width: 1200px) {
@@ -684,8 +696,8 @@ body {
 
         button {
           border: none;
-          width: 60px;
-          .rem(height, 52);
+          width: 80px;
+          .rem(height, 42);
           background: @blue;
           .zero;
           .rem(font-size, 16);

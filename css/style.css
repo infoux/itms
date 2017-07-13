@@ -141,11 +141,11 @@ basic
 .pagenation strong {
   display: inline-block;
   vertical-align: top;
-  font-size: 1.57142857rem;
+  font-size: 1.14285714rem;
   border: 1px solid #909090;
-  width: 2.42857143rem;
-  height: 3rem;
-  line-height: 3rem;
+  width: 1.85714286rem;
+  height: 2.57142857rem;
+  line-height: 2.57142857rem;
   margin: 0 0.07142857rem;
 }
 @media all and (min-width: 1200px) {
@@ -168,7 +168,7 @@ basic
 .pagenation strong.jump i,
 .pagenation a.move i,
 .pagenation strong.move i {
-  font-size: 1.57142857rem;
+  font-size: 1.14285714rem;
   line-height: inherit;
   font-style: normal;
 }
@@ -914,7 +914,7 @@ body .sub .container h3 small {
   right: 0;
   top: 0;
   padding: 0 0.71428571rem;
-  width: calc(100% / 5);
+  width: 7.14285714rem;
   font-size: 1.42857143rem;
   height: 3.21428571rem;
   line-height: 3.21428571rem;
@@ -1158,6 +1158,9 @@ body .sub .container dl.view dd {
   body .sub .container dl.view dd.n3 {
     width: calc((100% - 420px) / 3);
   }
+  body .sub .container dl.view dd.n2 {
+    width: 460px;
+  }
   body .sub .container dl.view dd.nw {
     width: 640px;
   }
@@ -1216,14 +1219,12 @@ body .sub .container ul.research li {
   padding: 0.85714286rem 0 0;
   border-bottom: 1px solid #c7c7c7;
   position: relative;
-  height: 3rem;
-  line-height: 3rem;
 }
 @media all and (min-width: 1200px) {
   body .sub .container ul.research li {
     padding: 0;
     text-align: right;
-    height: 42px;
+    height: 52px;
     line-height: 52px;
   }
 }
@@ -1232,12 +1233,15 @@ body .sub .container ul.research li h4 {
   font-size: 1.42857143rem;
   padding: 0 0.71428571rem;
   font-weight: 400;
+  height: 3rem;
+  line-height: 3rem;
 }
 @media all and (min-width: 1200px) {
   body .sub .container ul.research li h4 {
     display: inline-block;
     position: absolute;
     left: 0;
+    height: 52px;
     line-height: 52px;
   }
 }
@@ -1311,10 +1315,17 @@ body .sub .container ul.research.result li h4 {
   line-height: 3rem;
 }
 body .sub .container ul.research.result li p {
+  width: 7.14285714rem;
   margin: 0;
   border-top: none;
   text-align: center;
   border-left: 1px solid #c7c7c7;
+}
+body .sub .container ul.research.basic li {
+  text-align: left;
+}
+body .sub .container ul.research.basic li h4 {
+  position: relative;
 }
 body .sub .container table.manage {
   font-size: 1.14285714rem;
@@ -1323,7 +1334,7 @@ body .sub .container table.manage {
   border-spacing: 0;
   border-collapse: separate;
   border-bottom: 1px solid #c7c7c7;
-  margin-top: 2.14285714rem;
+  margin: 2.14285714rem 0;
 }
 body .sub .container table.manage tr.step01 {
   background: #ffe6e6;
@@ -1446,26 +1457,26 @@ body .sub .container table.respond-table tr td:last-child {
     padding: 1rem 0.28571429rem 1rem 12.14285714rem !important;
   }
   body .sub .container table.respond-table td:first-of-type {
-    margin-top: 2.14285714rem;
     font-weight: 800;
   }
   body .sub .container table.respond-table td:last-of-type {
     border-bottom-width: 1px;
+    margin-bottom: 2.14285714rem;
   }
 }
 body .sub .container fieldset.search {
   border: none;
   text-align: center;
-  margin: 0;
   padding: 0 0.71428571rem;
+  margin: 0 0 2.14285714rem;
   font-size: 0;
 }
 body .sub .container fieldset.search input {
   vertical-align: top;
-  font-size: 1.57142857rem;
-  width: calc(70% - 60px);
+  font-size: 1.28571429rem;
+  width: calc(70% - 80px);
   border: 1px solid #c7c7c7;
-  height: 3.71428571rem;
+  height: 3rem;
   padding: 0 0.71428571rem;
 }
 @media all and (min-width: 1200px) {
@@ -1476,10 +1487,10 @@ body .sub .container fieldset.search input {
 }
 body .sub .container fieldset.search select {
   vertical-align: top;
-  font-size: 1.57142857rem;
+  font-size: 1.28571429rem;
   width: 30%;
   border: 1px solid #c7c7c7;
-  height: 3.71428571rem;
+  height: 3rem;
   padding: 0 0.71428571rem;
   border-right: none;
 }
@@ -1491,8 +1502,8 @@ body .sub .container fieldset.search select {
 }
 body .sub .container fieldset.search button {
   border: none;
-  width: 60px;
-  height: 3.71428571rem;
+  width: 80px;
+  height: 3rem;
   background: #006fbd;
   font-size: 0;
   font-size: 1.14285714rem;
